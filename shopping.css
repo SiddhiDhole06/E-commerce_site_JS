@@ -130,6 +130,7 @@ header .icon-cart span{
 /* carttab */
 .cartTab{
     width: 400px;
+    max-width: 100vw;
     background-color: #353432;
     color: #eee;
     position: fixed;
@@ -140,6 +141,7 @@ header .icon-cart span{
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s;
+     overflow-x: hidden;
 }
 .cartTab h1{
     padding: 20px;
@@ -231,5 +233,19 @@ body.showCart .container{
     .cartTab {
         width: 100%;
         max-width: 100vw;
+          inset: 0 0 0 0;
+    }
+     .cartTab h1 {           
+        font-size: 20px; 
+        text-align: center;
+        padding: 10px;
+    }
+    .listCart .item {
+        grid-template-columns: 1fr 1fr;
+    }
+    .listCart .quantity span {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
     }
 }
