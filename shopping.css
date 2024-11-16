@@ -202,15 +202,34 @@ body.showCart .container{
 }
 
 
+/* Media Queries */
 @media screen and (max-width: 992px) {
-    .listProduct{
+    .listProduct {
         grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 768px) {
-    .listProduct{
+    .listProduct {
         grid-template-columns: repeat(2, 1fr);
     }
- 
+    header .icon-cart span {
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .listProduct {
+        grid-template-columns: 1fr;
+    }
+    section ul li {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+    .cartTab {
+        width: 100%;
+        max-width: 100vw;
+    }
 }
